@@ -1,0 +1,143 @@
+@import './var';
+
+body
+  margin: 0
+  padding: 0 !important
+
+*
+  margin: 0
+  box-sizing: border-box
+
+.gn-center-container
+  width: 100%
+  max-width: $gn-std-width
+  margin: 0 auto
+  position: relative
+
+.gn-full
+  &.full-width
+    width: 100%
+  &.full-height
+    height: 100%
+  &.full-viewport-width
+    width: 100vw
+  &.full-viewport-height
+    height: 100vh
+
+.gn-side
+  &.side-width
+    width: $gn-side-width
+
+.gn-layout
+  display: flex  
+  min-height: 1px
+  min-width: 1px
+  &.layout-fit
+    height: 100%
+  &.layout-wrap
+    flex-wrap: wrap  
+  &.direction-column
+    flex-direction: column
+  &.direction-row
+    flex-direction: row
+  &.justify-start
+    justify-content: flex-start
+  &.justify-between
+    justify-content: space-between
+  &.justify-arround
+    justify-content: space-around
+  &.justify-end
+    justify-content: flex-end
+  &.justify-center
+    justify-content: center
+  &.align-start
+    align-items: flex-start
+  &.align-center
+    align-items: center
+  &.align-end
+    align-items: flex-end
+  >.flex
+    flex: 1
+  >.flex-none
+    flex: none
+  >.scrollable
+    overflow: auto
+    height: 100%
+    width: 100%
+
+  .gn-position
+    position: relative
+    &.position-relative
+      position: relative
+    &.position-sticky
+      top: 0
+      position: sticky
+    &.position-absolute
+      top: 0
+      left: 0
+      position: absolute
+
+.gn-scrollable
+  overflow: auto
+  height: 100%
+  width: 100%
+
+$gapSizes: (NONE, 0), (XS, $gn-gap-XS),(S, $gn-gap-S),(N, $gn-gap-N),(M, $gn-gap-M),(L, $gn-gap-L),(XL, $gn-gap-XL)
+@each $label, $size in $gapSizes 
+  .gn-padding-#{$label}.padding-all{padding: #{$size}}
+  .gn-padding-#{$label}.padding-top{padding-top: #{$size}}
+  .gn-padding-#{$label}.padding-right{padding-right: #{$size}}
+  .gn-padding-#{$label}.padding-bottom{padding-bottom: #{$size}}
+  .gn-padding-#{$label}.padding-left{padding-left: #{$size}}
+
+  .gn-margin-#{$label}.margin-all{margin: #{$size}}
+  .gn-margin-#{$label}.margin-top{margin-top: #{$size}}
+  .gn-margin-#{$label}.margin-right{margin-right: #{$size}}
+  .gn-margin-#{$label}.margin-bottom{margin-bottom: #{$size}}
+  .gn-margin-#{$label}.margin-left{margin-left: #{$size}}
+
+
+
+// $borderPos: (N, thin), (M, 2px), (L, 4px), (XL, 8px);
+// @each $label, $weight in $borderPos
+//   .gn-border-#{$label}.border-all{border:#{$weight} solid #{$gn-border-color}}
+//   .gn-border-#{$label}.border-top{border-top:#{$weight} solid #{$gn-border-color}}
+//   .gn-border-#{$label}.border-left{border-left:#{$weight} solid #{$gn-border-color}}
+//   .gn-border-#{$label}.border-bottom{border-bottom:#{$weight} solid #{$gn-border-color}}
+//   .gn-border-#{$label}.border-right{border-right:#{$weight} solid #{$gn-border-color}}
+
+$fontSizes: (XS, 8px), (S, 10px), (NS, 12px), (N, 14px), (MN, 16px), (M, 20px), (L, 28px), (XL, 38px)
+@each $label, $size in $fontSizes
+  .gn-font-size-#{$label}{font-size: #{$size} !important}
+
+$fontWeights: (LIGHT, 300), (NORMAL, 400), (MEDIUM, 600), (BOLD, 700), (XBOLD, 800)
+@each $label, $size in $fontWeights
+  .gn-font-weight-#{$label}{font-weight: #{$size} !important}
+
+.gn-color-dark-low
+  color: #aaa
+.gn-colod-dark-medium
+  color: #6a6a6a
+
+.gn-no-wrap
+  white-space: nowrap
+
+$alignment: (CENTER, center), (LEFT, left), (RIGHT, right)
+@each $label, $align in $alignment
+  .gn-text-align-#{$label}{text-align: #{$align}}
+
+@media screen and (max-width: $gn-std-width)
+  .gn-center-container
+    padding-left: 24px
+    padding-right: 24px
+
+@media screen and (max-width: $gn-media-xs)
+  .gn-layout
+    &.direction-column-xs
+      flex-direction: column !important
+      &.reverse
+        flex-direction: column-reverse !important
+    &.direction-row-xs
+      flex-direction: row !important
+      &.reverse
+        flex-direction: row-reverse !important

@@ -1,0 +1,66 @@
+{
+  "menu":{
+    "home":"Home",
+    "aboutUtc":"About UTC",
+    "company":"Company Profile",
+    "serviceCatalogue":"Support and Services Solution",
+    "newsUpdate":"Innovation News",
+    "ourPartner":"Our Partner",
+    "event":"Event",
+    "contact":"Contact Us",
+    "peran":"STRATEGIC ROLE",
+    "cp-profil": "COMPANY PROFILE",
+    "nilai":"MAIN VALUES",
+    "visimisi":"VISION MISSION",
+    "profile":"PROFILE UPSTREAM INNOVATION",
+    "AMS":"AMS",
+    "newsPhe":"PHE News"
+  },
+  "partner":{
+    "headline":"We have partners to realize together strategies and solutions provided by UTC, is the commitment to uphold the ethical standards"
+  },
+  "article":{
+    "noData":"Article is not found"
+  },
+  "other":{
+    "email":"Email",
+    "subject":"Subject",
+    "name":"Name",
+    "message":"Message",
+    "submit":"Submit",
+    "otherNews":"Others",
+    "eventList":"List Event",
+    "latest":"Latest",
+    "index":"Index",
+    "more":"More",
+    "searchArticle":"Search Article",
+    "news": "Innovation News",
+    "about":"PHE News",
+    "serviceList": "Service Solution",
+    "serviceDownload":"Service Support",
+    "close":"Close"
+  },
+  "mail":{
+    "info":"Contact us via email below"
+  },
+  "service":{
+    "descTeknis":"Technical Support is an activity carried out by the UI Function on:",
+    "descTeknisa":"a. \t a project that is a request for special and urgent needs to help solve unique and non-routine problems, optimize and improve operations (operational improvement);",
+    "descTeknisb":"b. \t routine work that is requested by Petrotechnical Solutions and management and maintenance of Upstream Technical Data;",
+    "descTeknisBottom":"\n within but not limited to PT Pertamina (Persero), PT Pertamina Hulu Energi (PT PHE), Regional, Zones and Pertamina Affiliated Companies such as but not limited to PT Badak NGL and Other Subholding",
+    "descSolusi":"Technology and Innovation Solutions is an activity carried out by the UI Function and the Company's internal and/or external functions that are Incremental Innovation and not routine to improve operations (operational improvement) by finding solutions to technical problems encountered. This activity can be in technical discussions, reviews, evaluations, or field observations for less than 1 (one) month and is carried out by 1 (one) personnel from the UI Function."
+  },
+  "profil":{
+    "judul":"TRACK RECORD ORGANIZATION",
+    "judul2":"UPSTREAM INNOVATION",
+    "2020":"2020 up to now",
+    "desc2020":"Upstream Innovation (UI) as the Center of Excellence in Upstream Innovation in PT. PHE as Upstream Subholding",
+    "2017":"Upstream Techical Center (UTC)",
+    "desc2006a":"Transferred from the Upstream Directorate to Pertamina EP to become the Corporate Strategic Planning of PT. Pertamina EP",
+    "desc2006b":"27 September 2006, Returned to the Upstream Directorate and turned into a strategic unit, namely Exploration and Production Technology Center (EPTC)",
+    "2003":"Upstream Directorate of Technology Services Division",
+    "2001":"(Exploration Division and Production Division) merged into Pertamina Hulu Engineering Services Division",
+    "1996":"Technology Service of Exploration Division and Technology Service of Pertamina EP Production Division",
+    "seb1996":"Research & Development Unit"
+  }
+}

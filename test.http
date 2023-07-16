@@ -1,0 +1,22 @@
+
+
+
+### Variable
+@host= http://localhost:3001
+@token= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTcwODU3Nzc5LCJleHAiOjE1NzM0NDk3Nzl9._brAgaqxXAl0dMPC6ExOzsi1kEg98HpgNNxxPxFrwlc
+
+### Login
+POST {{host}}/auth/local
+Content-Type: application/json
+
+{
+  "username":"super_admin",
+  "password":"cikan"
+}
+
+### Me
+GET {{host}}/auth/local/me
+Authorization: Bearer {{token}}
+
+### Get Current Catalogue File
+GET {{host}}/api/service-catalogue-file/public/current

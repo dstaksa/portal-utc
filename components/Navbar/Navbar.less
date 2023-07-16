@@ -1,0 +1,57 @@
+@import '../../styles/var.less';
+
+.utc-navbar{
+  background: #012f56;
+  color: rgba(241, 248, 252, 0,72);
+  padding: 1px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  .gn-center-container{
+    min-height: 48px;
+  }
+
+  ul.nav-menu{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    li{
+      display: inline-block;
+    }
+  }
+
+  .nav-item{
+    padding: 0px 24px;
+    height: 48px;
+    padding-top: 12px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    &.active{
+      border-bottom: 4px solid white;
+      color: white;
+    }
+  }
+  a{
+    color: inherit;
+  }
+  .search{
+    input, .ant-select-selection{
+      background: transparent;
+      color: white;
+      border-radius: 24px;
+      &:focus, &:hover{
+        border-color: white !important;
+      }
+    }
+  
+    svg{
+      color: white !important;
+    }
+    
+    input{
+      padding-left: 16px;
+    }
+  
+  }
+}

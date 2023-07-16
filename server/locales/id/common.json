@@ -1,0 +1,66 @@
+{
+  "menu":{
+    "home":"Beranda",
+    "aboutUtc":"Tentang UTC",
+    "company":"Profil Perusahaan",
+    "serviceCatalogue":"Solusi Teknis dan Dukungan Teknis",
+    "newsUpdate":"Innovation News",
+    "ourPartner":"Partner Kami",
+    "event":"Even",
+    "contact":"Kontak Kami",
+    "peran":"PERAN STRATEGIS",
+    "cp-profil": "PROFIL PERUSAHAAN",
+    "nilai":" NILAI NILAI UTAMA",
+    "visimisi":"VISI & MISI",
+    "profile":"PROFILE UPSTREAM INNOVATION",
+    "AMS":"AMS",
+    "newsPhe":"Berita Seputar PHE"
+  },
+  "partner":{
+    "headline":"Kami memiliki mitra untuk bersama-sama mewujudkan strategi dan solusi teknis yang berlandaskan komitmen akan standar etika"
+  },
+  "article":{
+    "noData":"Tidak ada artikel yang ditemukan"
+  },
+  "other":{
+    "email":"Email",
+    "subject":"Subjek",
+    "name":"Nama",
+    "message":"Pesan",
+    "submit":"Kirim",
+    "otherNews":"Other News",
+    "eventList":"Daftar Even",
+    "latest":"Terbaru",
+    "index":"Indeks",
+    "more":"Selengkapnya",
+    "searchArticle":"Cari Artikel",
+    "news": "Innovation News",
+    "about":"Berita Seputar PHE",
+    "serviceList": "Solusi Teknis",
+    "serviceDownload":"Dukungan Teknis",
+    "close":"Tutup"
+  },
+  "mail":{
+    "info":"Hubungi kami melalui email di bawah ini"
+  },
+  "service":{
+    "descTeknis":"Dukungan Teknis merupakan kegiatan yang dilakukan oleh Fungsi UI atas: ",
+    "descTeknisa":"a. \t proyek yang merupakan permintaan kebutuhan khusus dan mendesak untuk membantu menyelesaikan permasalahan khusus dan tidak rutin, optimalisasi serta peningkatan operasi (operational improvement);",
+    "descTeknisb":"b. \t pekerjaan rutin yang merupakan permintaan Solusi Petrotechnical serta pengelolaan dan pemeliharaan Data Teknis Upstream;",
+    "descTeknisBottom":"\n di lingkungan namun tidak terbatas pada PT Pertamina (Persero), PT Pertamina Hulu Energi (PT PHE), Regional, Zona dan Perusahaan Terafiliasi Pertamina seperti namun tidak terbatas pada PT Badak NGL maupun Subholding Lainnya",
+    "descSolusi":"Solusi Teknologi dan Inovasi adalah suatu kegiatan yang dilakukan oleh Fungsi UI bersama-sama Fungsi-fungsi internal dan/atau eksternal Perusahaan yang bersifat Incremental Innovation dan tidak rutin dalam upaya peningkatan operasi (operational improvement) dengan mencari solusi atas permasalahan teknis yang dihadapi. Kegiatan ini dapat berupa diskusi teknis, ulasan (review), evaluasi atau observasi di lapangan dengan jangka waktu kurang dari 1 (satu) bulan dan dilaksanakan oleh 1 (satu) personel dari Fungsi UI."
+  },
+  "profil":{
+    "judul":"REKAM JEJAK ORGANISASI",
+    "judul2":"UPSTREAM INNOVATION",
+    "2020":"2020 s/d Saat Ini",
+    "desc2020":"Upstream Innovation (UI) sebagai Center of Excellence in Upstream Innovation dalam PT. PHE sebagai Subholding Upstream",
+    "2017":"Upstream Techical Center (UTC)",
+    "desc2006a":"Dipindahkan dari Direktorat Hulu ke Pertamina EP menjadi Perencanaan Strategis Korporat PT. Pertamina EP",
+    "desc2006b":"27 September 2006, Dikembalikan lagi ke Direktorat Hulu dan berubah menjadi sebuah unit strategis yaitu Exploration and Production Technology Center (EPTC)",
+    "2003":"Divisi Jasa Teknologi Direktorat Hulu",
+    "2001":"(Divisi Eksplorasi dan Divisi Produksi) digabung menjadi Divisi Jasa Teknik Pertamina Hulu",
+    "1996":"Dinas Teknologi Divisi Explorasi dan Dinas Teknologi Divisi Produksi Pertamina EP",
+    "seb1996":"Unit Penelitian & Pengembangan"
+  }
+}

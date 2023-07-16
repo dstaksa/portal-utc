@@ -1,0 +1,61 @@
+@import '../../styles/var.less';
+@triangle-color: @grad-color-1;
+// @catalogue-item-height: 400px;
+@catalogue-item-height: auto;
+@triangle-height: 640px;
+
+.utc-service-catalogue{
+  position: relative; 
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/@grad-color-1+0,7db9e8+100 */
+  background: @grad-color-2; /* Old browsers */
+  background: -moz-linear-gradient(45deg, @grad-color-2 0%, @grad-color-1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, @grad-color-2 0%,@grad-color-1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, @grad-color-2 20%,@grad-color-1 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@grad-color-2, endColorstr=@grad-color-1, GradientType=0 ); /* IE6-9 */
+  button{
+    border-color: white !important;
+    color: white !important;
+  }
+  .catalogue-item{
+    position: relative;
+    min-height: @catalogue-item-height;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    width: 100%;
+    // &:after{
+    //   content: '';
+    //   position: absolute;
+    //   width: 70%;
+    //   height: 1px;
+    //   background: @triangle-color;
+    //   bottom: 0;
+    //   left: 0;
+    // }
+    // .triangle-up {
+    //   width: 0;
+    //   height: 0;
+    //   bottom: 0;
+    //   border-style: solid;
+    //   border-width: @triangle-height 0 0 @triangle-height;
+    //   border-color: transparent transparent transparent @triangle-color;
+    //   position: absolute;
+    //   left: 0;
+    //   &.swap{
+    //     border-width: 0 0 @triangle-height @triangle-height;
+    //     border-color: transparent transparent @triangle-color transparent;
+    //     right: 0;
+    //     left: unset;
+    //   }
+    // }
+  }
+}
+
+@media screen and (max-width: @media-xs){
+  .utc-service-catalogue{
+    .catalogue-item{
+      padding: 48px 0;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+select* from secure.role where application='APP006';
+
+select* from secure.role_screen where role='ROL0017';
+
+select* from secure.user_role where role ='ROL0014';
+select* from secure.user_role where users ='USR0102';
+
+select* from secure.users where id ='USR0102';
+
+select* from secure.role_screen where role ='ROL0014';
+-----------------------------------------------------------------------
+select* from secure.user_role where role ='ROL0014';
+select* from secure.user_role where users ='USR001';
+
+select* from secure.users where id ='USR001';
+
+
+select*from secure.screen where screen_name ='Feedback'; --cek feedback screen
+
+select* from secure.role_screen where role ='ROL0014' and screen ='SRN0213'; -- cek feedback screen pada customer
+
+select* from secure.screen where screen_name ='Study'; -- cek id studi internal pada screen
+select* from secure.role_screen where role ='ROL0017' and screen ='SRN0222'; --cek screen studi internal pada role screen untuk role pic
+
+
+--screen orderlayanan
+select* from secure.screen where screen_name ='Order Layanan';  
+select* from secure.role_screen where role ='ROL0017' and screen ='SRN0163'; -- cek orderlayanan screen pada pic
+
+select* from secure.role_screen where role='ROL0017';
+select* from secure.screen ORDER BY screen_name;
+select* from secure.role_screen;
+select * from secure.role;
+select * from secure.users where username='training5';
+select * from secure.user_role where users='USR0129';
+select a.*, b.screen_name from secure.role_screen a join secure.screen b on b.id = a.screen where a.role='ROL0017';
+
+
+//CONFIG
+select * from secure.config where code in ('DOMAIN.SERVER','LOGIN.SERVICE');
+select * from secure.config where code in('EMAIL.BCC', 'EMAIL.FROMDESC', 'EMAIL.FROMDESC', 'EMAIL.PASSWORD', 'EMAIL.SERVER');
+
+CODE|CONTENT
+DOMAIN.SERVER	utc-4.pertamina.com
+LOGIN.SERVICE	http://ptmkppuaapps01.pertamina.com/puaservice/login/

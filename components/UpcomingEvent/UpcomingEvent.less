@@ -1,0 +1,61 @@
+@import '../../styles/var.less';
+
+@border: thin solid @primary-color !important;
+.utc-upcoming-event{
+  position: relative;
+  background: #03131e;
+  color: white;
+  .events, .calendar{
+    position: sticky;
+    top: 64px;
+  }
+  .calendar-table{
+    border: @border;
+  }
+  .action{
+    text-align: center;
+  }
+  .event-item{
+    color: white;
+    font-weight: 300;
+    width: 100%;
+    border: @border;
+    border-radius: 8px;
+    cursor: pointer;
+    .info{
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(255,255,255,.52);
+      .anticon{
+        color: @primary-color !important;
+        font-size: 16px;
+      }
+    }
+    &:hover{
+      box-shadow: 0px 0px 12px rgba(255,255,255,.32);
+      border-color: white;
+    }
+  }
+  .ant-pagination{
+    .ant-pagination-item, .ant-pagination-item-link{
+      background: transparent;
+      a, i{
+        color: white;
+      }
+    }
+    .ant-pagination-item-active{
+      a{
+        color: #888;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @media-xs){
+  .utc-upcoming-event{
+    .event-item{
+      width: 100%;
+      margin: 0 0 24px 0;
+    }
+  }
+}

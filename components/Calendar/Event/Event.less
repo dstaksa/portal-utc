@@ -1,0 +1,19 @@
+@import '../../../styles/var.less';
+
+.utc-calendar-event{
+  background: @primary-color;
+  .event-item{
+    color: white;
+    border-bottom: thin solid rgba(255,255,255,.1);
+    .title{
+      cursor: pointer;
+    }
+    .icon{
+      font-size: 48px;
+      color: rgba(255,255,255,.24);
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}

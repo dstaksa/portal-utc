@@ -1,0 +1,345 @@
+@color_1: #fff;
+@color_2: #000;
+@color2: #022f56;
+
+.sidebar {
+	margin-top: 34px;
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	right: 0;
+	width: 30%;
+	transition: all 0.5s ease;
+	#btn {
+		position: relative;
+		// color: @color_2;
+		left: 90%;
+		top: 6px;
+		font-size: 20px;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		line-height: 50px;
+		transform: translateX(-50%);
+		transition: all 0.5s ease;
+
+	}
+	ul {
+		position: relative;
+		visibility: hidden;
+		background: @color_1;
+		top:0;
+		transform: translateY(-34px);
+		opacity: 0;
+		transition: all 0.5s ease;
+		li {
+			position: relative;
+			height: 50px;
+			width: 100%;
+			margin: 0 5px;
+			list-style: none;
+			line-height: 50px;
+			
+			a {
+				color: @color_2;
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				transition: all 0.4s ease;
+				border-radius: 12px;
+				&:hover {
+					color: @color_1;
+					background: @color2;
+					.nav-icon{
+						color:@color_1;
+					}
+				}
+				i {
+					height: 50px;
+					min-width: 50px;
+					border-radius: 12px;
+					line-height: 50px;
+					text-align: center;
+				}
+			}
+			.nav-icon{
+				font-size: '10px';
+				color: @color_2;
+			}
+		}
+	}
+}
+.sidebar.active {
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	transition: all 0.5s ease;
+	
+	#btn {
+		position: relative;
+		color: @color_2;
+		left: 90%;
+		top: 6px;
+		font-size: 20px;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		line-height: 50px;
+		transform: translateX(-50%);
+		transition: all 0.5s ease;
+
+	}
+	ul {
+		position: relative;
+		visibility: visible;
+		background: @color_1;
+		top:0;
+		opacity: 1;
+		transform: translateY(0);
+		transition: all 0.5s ease;
+		border-radius: 25px 0px 0px 25px;
+		li {
+			position: relative;
+			height: 50px;
+			width: 100%;
+			margin: 0 5px;
+			list-style: none;
+			line-height: 50px;
+			a {
+				color: @color_2;
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				transition: all 0.4s ease;
+				border-radius: 12px;
+				&:hover {
+					color: @color_1;
+					background: @color2;
+					.nav-icon{
+						color:@color_1;
+					}
+				}
+				i {
+					height: 50px;
+					min-width: 50px;
+					border-radius: 12px;
+					line-height: 50px;
+					text-align: center;
+				}
+			}
+			.nav-icon{
+				font-size: '10px';
+				color: @color_2;
+			}
+		}
+	}
+}
+.logo_content {
+	.logo {
+		.logo_name {
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Color variables (appears count calculates by raw css)
+// @color0: #ffffff; // Appears 4 times
+// @color1: #11101d; // Appears 2 times
+// @color2: #022f56;
+
+// Width variables (appears count calculates by raw css)
+// @width1: 100%; // Appears 2 times
+// @width2: 50px; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+// @height1: 50px; // Appears 4 times
+
+// .sidebar {
+// 	background: @color1;
+// 	height: 100%;
+// 	padding: 6px 14px;
+// 	position: fixed;
+// 	right: 0;
+// 	top: 0;
+// 	transition: all 0.5s ease;
+// 	width: 270px;
+// 	.logo_content {
+// 		.logo {
+// 			align-items: center;
+// 			color: @color0;
+// 			display: flex;
+// 			height: @height1;
+// 			width: @width1;
+// 		}
+// 	}
+// 	#btn {
+// 		background: @color2;
+// 		color: @color0;
+// 		font-size: 20px;
+// 		height: @height1;
+// 		left: 90%;
+// 		line-height: @height1;
+// 		position: absolute;
+// 		text-align: center;
+// 		top: 6px;
+// 		transform: translateX(-50%);
+// 		width: @width2;
+// 	}
+// 	ul {
+// 		margin-top: 20px;
+// 		li {
+// 			height: @height1;
+// 			line-height: @height1;
+// 			list-style: none;
+// 			margin: 0 5px;
+// 			position: relative;
+// 			width: @width1;
+// 			a {
+// 				align-items: center;
+// 				border-radius: 12px;
+// 				color: @color0;
+// 				display: flex;
+// 				text-decoration: none;
+// 				transition: all 0.4s ease;
+// 				&:hover {
+// 					background: @color0;
+// 					color: @color1;
+// 				}
+// 				i {
+// 					border-radius: 12px;
+// 					height: @height1;
+// 					line-height: @height1;
+// 					min-width: @width2;
+// 					text-align: center;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.bagian_bawah {
+// 		bottom: 0;
+// 		left: 0;
+// 		position: absolute;
+// 		.logo_bawah {
+// 			height: 90px;
+// 			padding: 10px 30px;
+// 			position: relative;
+// 		}
+// 	}
+// }
+// .logo_content {
+// 	.logo {
+// 		.logo_name {
+// 			font-size: 20px;
+// 			font-weight: 400;
+// 		}
+// 	}
+// }
+
+
+// .sidebar{
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 270px;
+//     background: #11101d;
+//     padding: 6px 14px;
+//     transition: all 0.5s ease;
+// }
+
+// .sidebar .logo_content .logo{
+//     color: #fff ;
+//     display: flex;
+//     height: 50px;
+//     width: 100%;
+//     align-items: center;
+// }
+
+// .logo_content .logo .logo_name{
+//     font-size: 20px;
+//     font-weight: 400;
+// }
+
+// .sidebar #btn{
+//     position: absolute;
+//     color: #fff ;
+//     left: 90%;
+//     top: 6px;
+//     font-size: 20px;
+//     height: 50px;
+//     width: 50px;
+//     text-align: center;
+//     line-height: 50px;
+//     transform: translateX(-50%);
+// }
+
+// .sidebar ul{
+//     margin-top: 20px;
+// }
+
+// .sidebar ul li{
+//     position: relative;
+//     height: 50px;
+//     width: 100%;
+//     margin: 0 5px;
+//     list-style: none;
+//     line-height: 50px;
+// }
+
+
+// .sidebar ul li a{
+//     color: #fff;
+//     display: flex;
+//     align-items: center;
+//     text-decoration: none;
+//     transition: all 0.4s ease;
+//     border-radius: 12px;
+// }
+
+// .sidebar ul li a:hover{
+//     color: #11101d ;
+//     background: #fff;
+
+// }
+
+// .sidebar ul li a i{
+//     height: 50px;
+//     min-width: 50px;
+//     border-radius: 12px;
+//     line-height: 50px;
+//     text-align: center;
+// }
+
+// .sidebar .bagian_bawah{
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+// }
+
+// .sidebar .bagian_bawah .logo_bawah {
+//     position: relative;
+//     padding: 10px 30px;
+//     height: 90px;
+// }

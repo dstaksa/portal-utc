@@ -1,0 +1,37 @@
+@import '../../../../styles/var.less';
+
+.utc-section-label{
+  color: @theme-color;
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+  .label{
+    position: relative;
+    > a{
+      font-weight: 400;
+    }
+    > * {
+      &:after{
+        content: '|';
+        margin: 0; 
+      }
+    }
+  }
+  .label-line{
+    position: relative;
+    font-size: 10px;
+    &:after{
+      content: '-------------------------';
+      color: transparent;
+      border-bottom-color: @theme-color;
+      border-bottom-style: inset;
+      border-bottom-width: 2px;
+    }
+  }
+  &.inverse{
+    color: white;
+    .label-line:after{
+      border-bottom-color: white;
+    }
+  }
+}

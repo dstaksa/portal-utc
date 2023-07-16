@@ -1,0 +1,58 @@
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700, 800&display=swap');
+@import "~antd/dist/antd.less";
+@import "./var.less";
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden !important;
+}
+
+.info-color{
+  color: @info-color;
+}
+
+.gn-container{
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  .no-padding{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+button{
+  min-height: 40px;
+  font-weight: 600;
+}
+
+.link-on-hover{
+  &:hover{
+    color: @primary-color;
+  }
+}
+
+@media screen and (min-width: @media-sm){
+  .on-media{
+    &.desktop{
+      display: inherit;
+    }
+    &.mobile{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: @media-sm){
+  .on-media{
+    &.desktop{
+      display: none !important;
+    }
+    &.mobile{
+      display: inherit;
+    }
+  }
+}

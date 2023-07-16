@@ -1,0 +1,163 @@
+@import '../../styles/var.less';
+
+
+.utc-calendar{
+  &.small{
+    .calendar-table{
+      tbody tr{
+        height: 24px !important;
+      }
+    }
+  }
+  &.inverse{
+    *{
+      color: white;
+    }
+    .calendar-table{
+      border: thin solid rgba(255,255,255,.08);
+      border-radius: 8px;
+      padding: 24px !important;
+      .date{
+        color: rgba(255,255,255,.52);
+        font-size: 14px;
+      }
+    }
+    .control{
+      button{
+        background: transparent;
+      }
+    }
+  }
+  .control{
+    width: 100%;
+    text-align: right;
+    .current-date{
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+    button{
+      border: none;
+    }
+  }
+  .calendar-table{
+    width: 100%;
+    table{
+      width: 100%;
+    }
+    tbody tr{
+      height: 82px !important;
+    }
+    td, th{
+      text-align: center;
+      font-weight: 400;
+    }
+    .date{
+      font-size: 20px;
+      padding: 0;
+      display: flex;
+      margin: 0 auto;
+      justify-items: center;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+
+      &.today{
+        border: 4px solid white;
+        color: @primary-color;
+        font-weight: 700;
+      }
+      &.has-event{
+        background: @primary-color;
+        color: white;
+        cursor: pointer;
+      }
+      &.selected{
+        background: @primary-color;
+        color: white;
+      }
+    }
+  }
+  .event{
+    border-top: thin solid #ddd;
+    .event-panel{
+      background: #e6e6e6;
+      .title{
+        color: @primary-color;
+        font-weight: 500;
+        font-size: 1.4em;
+      }
+      .panel-header{
+        img{
+          width: 300px;
+          height: 92px;
+          object-fit: cover;
+        }
+      }
+      
+      .event-details{
+        background: #e6e6e6;
+        img{
+          width: 300px;
+          height: auto;
+        }
+        ul.info{
+          margin: 0;
+          padding: 0;
+          color: black;
+          li{
+            list-style: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-bottom: 8px;
+            span.small{
+              font-size: .8em;
+            }
+            i{
+              font-size: 1.4em;
+              width: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+            
+
+@media screen and (max-width: 800px){
+  .pr-calendar{
+    padding: 16px !important;
+    .center-container{
+      padding: 0;
+    }
+    .event-panel{
+      .title{
+        display: none;
+      }
+      
+      .panel-header{
+        img{
+          width: 100% !important;
+        }
+      }
+
+      .event-details{
+        .body{
+          margin-left: 0;
+        }
+        
+        .pr-media-image{
+          margin-bottom: 16px;        
+          img{
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+          
+        
+      
+    
+  

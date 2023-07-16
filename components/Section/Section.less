@@ -1,0 +1,20 @@
+@import '../../styles/var.less';
+
+.utc-section{
+  .image{
+    position: relative;
+  }
+  &.swap{
+    .image{
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (max-width: @media-xs){
+  .utc-section{
+    .image{
+      margin-bottom: 40px;
+    }
+  }
+}

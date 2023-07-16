@@ -1,0 +1,41 @@
+{
+  "common": {
+    "article": {
+      "noData": "common.article.noData"
+    }
+  },
+  "other": {
+    "undefined": "other.undefined",
+    "index": "other.index",
+    "news": "other.news",
+    "searchArticle": "other.searchArticle",
+    "serviceRequest": "other.serviceRequest",
+    "otherNews": "other.otherNews",
+    "eventList": "other.eventList",
+    "close": "other.close",
+    "latest": "other.latest",
+    "serviceDownload": "other.serviceDownload",
+    "serviceList": "other.serviceList"
+  },
+  "menu": {
+    "home": "menu.home",
+    "aboutUtc": "menu.aboutUtc",
+    "serviceCatalogue": "menu.serviceCatalogue",
+    "newsUpdate": "menu.newsUpdate",
+    "ourPartner": "menu.ourPartner",
+    "event": "menu.event",
+    "contact": "menu.contact",
+    "profile": "menu.profile",
+    "visimisi\n": "menu.visimisi\n",
+    "profil": "menu.profil",
+    "visimisiUPSTREAM INNOVATION": "menu.visimisiUPSTREAM INNOVATION",
+    "visimisi UPSTREAM INNOVATION": "menu.visimisi UPSTREAM INNOVATION",
+    "AMS": "menu.AMS"
+  },
+  "partner": {
+    "headline": "partner.headline"
+  },
+  "mail": {
+    "info": "mail.info"
+  }
+}

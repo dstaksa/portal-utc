@@ -1,0 +1,50 @@
+@import '../../styles/var.less';
+
+.utc-footbar{
+  background: @theme-color;
+  color: white;
+  position: relative;
+  .acc{
+    background-image: url(/images/footer-acc-bg.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 400px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: @theme-color;
+      left: -100%;
+    }
+    .triangle-primary{
+      width: 0;
+      height: 0;
+      bottom: 0;
+      border-style: solid;
+      border-color: transparent transparent @primary-color transparent;
+      position: absolute;
+      right: 0;
+    }
+    .triangle-theme{
+      width: 0;
+      height: 0;
+      bottom: 0;
+      border-style: solid;
+      border-color: transparent transparent transparent @theme-color;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: @media-xs){
+  .utc-footbar{
+    .acc{
+      width: 240px;
+    }
+  }
+}

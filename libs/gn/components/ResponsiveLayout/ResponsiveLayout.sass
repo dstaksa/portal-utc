@@ -1,0 +1,33 @@
+@import '../../styles/var'
+
+.gn-responsive-layout
+	width: 100%
+	.rframe
+		margin: 0 $gn-gap-S	
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-right: 0
+	.main-frame
+		width: 100%        
+	.side-frame
+		width: 320px
+	img
+		max-width: 100%
+
+@media screen and (max-width: $gn-media-xs)
+	.gn-responsive-layout
+		.side-frame 
+			width: 100% !important
+			margin-left: 0 !important
+		.rframe
+			margin: 0 !important
+			width: 100% !important
+			flex: none !important
+			padding: $gn-gap-S 0
+			> * 
+				width: 100%
+			&:first-child
+				padding-top: 0 
+		.container
+			flex-direction: column

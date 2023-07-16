@@ -1,0 +1,38 @@
+@import "../../styles/var.less";
+
+.utc-header{
+  width: 100%;
+  position: sticky;
+  height: 108px;
+  background: @theme-color;
+  color: white;
+  .utc-lettermark{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  input, .ant-select-selection{
+    background: transparent;
+    color: white;
+    border-radius: 24px;
+    &:focus, &:hover{
+      border-color: white !important;
+    }
+  }
+  input{
+    padding-left: 16px;
+  }
+  svg{
+    color: white !important;
+  }
+}
+
+@media screen and (max-width: @media-xs){
+  .utc-header{
+    height: 80px;
+    .utc-brand{
+      .utc-lettermark, .utc-logo-letter-mark{
+        display: none;
+      }
+    }
+  }
+}
